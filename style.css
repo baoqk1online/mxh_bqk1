@@ -1,0 +1,78 @@
+:root {
+  --radius: 20px;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #f7f7fb;
+  line-height: 1.5;
+}
+.wrap {
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 24px;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+h1 { margin: 8px 0 0; font-size: clamp(22px, 3.8vw, 36px); }
+p.sub { margin: 6px 0 0; color: #555; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+@media (min-width: 900px) {
+  .grid { grid-template-columns: 1.1fr .9fr; }
+}
+.card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.hero img {
+  width: 100%;
+  display: block;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+.qrbox {
+  display: grid;
+  gap: 8px;
+  place-items: center;
+  padding: 16px;
+}
+#qrCanvas { width: 220px; height: 220px; }
+.hint { color: #666; font-size: 14px; text-align: center; }
+.social {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  transition: transform .05s ease, filter .2s ease;
+  color: #fff;
+}
+.btn:active { transform: translateY(1px); }
+.facebook { background: #1877F2; }
+.youtube { background: #FF0000; }
+.tiktok { background: #000; }
+footer {
+  text-align: center;
+  color: #888;
+  margin-top: 24px;
+  font-size: 13px;
+}
