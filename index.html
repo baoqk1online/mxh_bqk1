@@ -1,48 +1,15 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Trang giới thiệu</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <h1>Trang giới thiệu</h1>
-      <p class="sub">Bấm vào ảnh hoặc quét mã QR để mở trang này. Dưới đây là các kênh mạng xã hội.</p>
-    </header>
+<link rel="stylesheet" href="style.css">
 
-    <div class="grid">
-      <!-- Left: Clickable hero image -->
-      <section class="card hero">
-        <a id="homeLink" href="#">
-          <img src="assets/hero.png" alt="Ảnh giới thiệu (bấm để mở trang)" />
-        </a>
-      </section>
 
-      <!-- Right: QR + social buttons -->
-      <aside class="card">
-        <div class="qrbox">
-          <canvas id="qrCanvas" aria-label="Mã QR dẫn đến trang này"></canvas>
-          <div class="hint">Quét mã QR để vào: <span id="urlText"></span></div>
-        </div>
-        <div class="social">
-          <!-- TODO: Thay link thật -->
-          <a class="btn facebook" href="https://facebook.com/" target="_blank">Facebook: Báo Quân khu 1 Điện tử</a>
-          <a class="btn youtube" href="https://youtube.com/" target="_blank">YouTube: Truyền hình Quân khu 1</a>
-          <a class="btn tiktok" href="https://tiktok.com/" target="_blank">TikTok: Báo - Truyền hình Quân khu 1</a>
-        </div>
-      </aside>
+  <div class="container">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <h1>Báo Quân khu 1</h1>
+    <p class="tagline">Theo dõi chúng tôi trên các nền tảng:</p>
+
+    <div class="links">
+      <a href="https://baoquankhu1.vn/" target="_blank" class="btn website">Báo Quân khu 1 Điện tử</a>
+      <a href="https://facebook.com/" target="_blank" class="btn facebook">Facebook: Báo Quân khu 1 Điện tử</a>
+      <a href="https://youtube.com/" target="_blank" class="btn youtube">YouTube: Báo-Truyền hình Quân khu 1</a>
+      <a href="https://tiktok.com/" target="_blank" class="btn tiktok">TikTok: Báo-Truyền hình Quân khu 1</a>
     </div>
-
-    <footer>
-      <p>Thay các liên kết bằng kênh thật của bạn. File này tự tạo QR dẫn đến chính URL của trang.</p>
-    </footer>
   </div>
-
-  <!-- QRCode library -->
-  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
