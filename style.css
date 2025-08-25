@@ -1,3 +1,4 @@
+/* Reset cơ bản */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,26 +7,36 @@ body {
   color: #333;
 }
 
+/* Khung chính */
 .container {
-  max-width: 400px;
+  max-width: 600px;
   margin: auto;
   padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Logo chính */
 .logo {
-  width: 480px;
+  display: block;
+  width: 100%;
+  height: auto;
   margin: 20px 0;
 }
 
+/* Tiêu đề */
 h1 {
+  font-size: 1.8em;
   margin: 10px 0;
 }
 
+/* Mô tả */
 .tagline {
+  font-size: 1em;
   color: #666;
   margin-bottom: 20px;
 }
 
+/* Liên kết */
 .links {
   display: flex;
   flex-direction: column;
@@ -38,10 +49,25 @@ h1 {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  display: block;
+  display: flex;              /* icon và chữ trên cùng dòng */
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.1em;
+  transition: opacity 0.2s;
 }
 
-.website { background: #008060; }   /* xanh đậm cho website */
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Icon bên trái */
+.icon {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/* Màu nền cho từng nền tảng */
+.website { background: #008060; }
 .facebook { background: #1877f2; }
-.youtube { background: #ff0000; }
-.tiktok { background: #000; }
+.youtube  { background: #ff0000; }
+.tiktok   { background: #000; }
